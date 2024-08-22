@@ -1,0 +1,27 @@
+{
+  "lm": null,
+  "traces": [],
+  "train": [],
+  "demos": [
+    {
+      "augmented": true,
+      "titles": "['Max Payne', 'Super Mario Odyssey', 'The Last of Us Part II', 'Super Mario Bros. 3', 'Doom', 'Minecraft', 'The Witcher 2: Assassins of Kings', 'Hollow Knight']",
+      "scores": "{'Shooter': -2, 'Platform': 0, 'Adventure': -2, 'Puzzle': -1, 'Simulator': 0, 'Role-playing (RPG)': -1, 'Indie': 1}",
+      "output": "{\n    \"recommendations\": {\n        \"games\": [\"Castlevania\", \"Bloodborne\", \"Dark Souls\"],\n        \"rationale\": \"Based on the user's preferences for Shooter and RPG genres with negative scores, we recommend games that are similar to Doom and The Witcher 2: Assassins of Kings. Castlevania is a classic action-adventure game with strong shooter elements, Bloodborne is an action RPG with challenging combat, and Dark Souls is a notoriously difficult RPG with deep lore.\"\n    }\n}"
+    },
+    {
+      "titles": "['Batman: Arkham Asylum', 'The Legend of Zelda: Breath of the Wild', 'The Legend of Zelda: Ocarina of Time', 'The Walking Dead', 'Super Mario Bros.', 'Horizon Zero Dawn', 'Tomb Raider', 'Super Mario Odyssey', \"Assassin's Creed II\", 'Overwatch', 'Portal 2', \"Uncharted 3: Drake's Deception\"]",
+      "scores": "{\"Hack and slash\/Beat 'em up\": 0, 'Adventure': 1, 'Puzzle': 0, 'Role-playing (RPG)': -1, 'Point-and-click': 1, 'Platform': 1, 'Shooter': 2, 'Strategy': 1}"
+    },
+    {
+      "titles": "['Super Mario Bros. 3', 'Resident Evil 4', 'Super Mario Galaxy', 'Wolfenstein: The New Order', 'The Legend of Zelda: A Link to the Past', \"Uncharted 4: A Thief's End\", 'The Legend of Zelda: Ocarina of Time', 'Half-Life 2', 'Undertale', 'Max Payne', 'The Walking Dead', 'Limbo', 'Fallout: New Vegas']",
+      "scores": "{'Platform': -1, 'Shooter': 1, 'Adventure': 1, 'Puzzle': 1, 'Role-playing (RPG)': -1, 'Turn-based strategy (TBS)': 0, 'Indie': 2, 'Point-and-click': 1}"
+    },
+    {
+      "titles": "['Metal Gear Solid 3: Snake Eater', 'The Elder Scrolls IV: Oblivion', 'The Last of Us Remastered', 'Fallout: New Vegas', \"Sid Meier's Civilization V\", 'Final Fantasy VII', \"Assassin's Creed Brotherhood\", 'Max Payne', 'Celeste', 'Middle-earth: Shadow of Mordor', \"Assassin's Creed II\", 'Tomb Raider']",
+      "scores": "{'Shooter': -1, 'Tactical': 1, 'Adventure': 3, 'Role-playing (RPG)': -1, 'Simulator': 0, 'Strategy': 0, 'Turn-based strategy (TBS)': -2, 'Puzzle': -1, 'Platform': -1, 'Indie': 0, \"Hack and slash\/Beat 'em up\": 0}"
+    }
+  ],
+  "signature_instructions": "You are a game recommendation API that receives a list of games\na user has played and a set of genres with scored preferences.\nYou will respond in JSON.  The JSON schema should include\n{\n  \"recommendations\": {\n    \"games\": \"list of 5 strings [Super Mario World, Call of Duty, ...]\",\n    \"rationale\": \"string (reasoning for selecting the recommendedations)\"\n  }\n}",
+  "signature_prefix": "Output:"
+}
